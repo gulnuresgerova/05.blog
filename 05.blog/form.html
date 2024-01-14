@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script defer src="./assets/js/form.js"></script>
+    <title>New Website</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <h2>The New Website</h2>
+
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./form.html">New Blog</a></li>
+              <li><a href="./details.html">Details</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="form">
+      <div class="container">
+        <h1 class="formhead">The New Blog Form</h1>
+        <div class="form">
+          <form action="">
+
+
+            <div class="blogTitle">
+              <label for="">Blog title:</label>
+
+              <input type="text" class="input" />
+            </div>
+
+            <div class="blogBody">
+              <label for="">Blog body:</label>
+
+              <textarea name="" id="" cols="25" rows="5"></textarea>
+            </div>
+
+            <div class="blogAuthor">
+              <label for="">Blog author:</label>
+
+              <select name="" id="">
+                <option value="select author" selected disabled>
+                  select author
+                </option>
+                <option value="Lorem">Lorem</option>
+                <option value="ipsum">Ipsum</option>
+              </select>
+            </div>
+            
+            <button class="add-Blog">Add Blog</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

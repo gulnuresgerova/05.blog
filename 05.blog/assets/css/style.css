@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  margin-bottom: 40px;
+}
+header .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+header .header {
+  font-family: monospace;
+  font-style: italic;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid brown;
+}
+header .header h2 {
+  color: brown;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  header .header h2 {
+    font-size: 1.3rem;
+  }
+}
+header .header input {
+  font-family: monospace;
+  font-style: italic;
+  height: 30px;
+  width: 200px;
+  padding: 0 10px;
+  outline: none;
+  color: brown;
+  border: 1px solid brown;
+}
+@media screen and (max-width: 767px) {
+  header .header input {
+    width: 100px;
+  }
+}
+header .header input::-moz-placeholder {
+  color: brown;
+}
+header .header input::placeholder {
+  color: brown;
+}
+header .header button {
+  height: 30px;
+  width: 110px;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  header .header button {
+    width: 80px;
+  }
+}
+header .header .sort {
+  font-family: monospace;
+  font-style: italic;
+  background-color: brown;
+  color: white;
+}
+header .header .sort:hover {
+  background-color: rgba(245, 154, 154, 0.47);
+  color: brown;
+  border: 1px solid brown;
+}
+header .header nav {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  margin-left: 0;
+}
+header .header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+header .header nav ul li a {
+  font-family: monospace;
+  font-style: italic;
+  text-decoration: none;
+  color: brown;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 767px) {
+  header .header nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+#cards .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+#cards .container .cadrshead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: brown;
+  padding-bottom: 30px;
+  font-family: monospace;
+  font-style: italic;
+}
+#cards .container .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#cards .container .cards .card {
+  font-family: monospace;
+  font-style: italic;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  border: 1px solid brown;
+  box-shadow: 7px 7px 10px rgb(174, 114, 114);
+  border-radius: 7px;
+}
+@media screen and (max-width: 767px) {
+  #cards .container .cards .card {
+    width: 100%;
+  }
+}
+#cards .container .cards .card .card-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+#cards .container .cards .card .card-body h2 {
+  color: rgb(68, 67, 67);
+}
+#cards .container .cards .card .card-body .text {
+  color: brown;
+  font-weight: 30px;
+}
+#cards .container .cards .card .card-body p {
+  color: grey;
+}
+#cards .container .cards .card .card-body button {
+  height: 30px;
+  width: 70px;
+  border: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+#cards .container .cards .card .card-body .delete {
+  font-family: monospace;
+  font-style: italic;
+  background-color: brown;
+  color: white;
+}
+#cards .container .cards .card .card-body .delete:hover {
+  background-color: rgba(245, 154, 154, 0.47);
+  color: brown;
+  border: 1px solid brown;
+}
+#cards .container .cards .card .card-body .edit {
+  border: none;
+  border-radius: 7px;
+  padding: 7px 10px;
+  font-family: monospace;
+  font-style: italic;
+  background-color: rgb(157, 165, 42);
+  color: white;
+}
+#cards .container .cards .card .card-body .edit:hover {
+  background-color: green;
+  color: white;
+}
+
+#form .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+#form .container .formhead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: brown;
+  padding-bottom: 30px;
+  font-family: monospace;
+  font-style: italic;
+}
+#form .container .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#form .container .form form {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+#form .container .form form .blogTitle, #form .container .form form .blogBody, #form .container .form form .blogAuthor {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+#form .container .form form .blogTitle label, #form .container .form form .blogBody label, #form .container .form form .blogAuthor label {
+  color: rgb(65, 64, 64);
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+#form .container .form form .blogTitle input, #form .container .form form .blogBody input, #form .container .form form .blogAuthor input {
+  padding: 2px 6px;
+  outline: none;
+  font-family: monospace;
+  font-style: italic;
+}
+#form .container .form form .blogTitle textarea, #form .container .form form .blogBody textarea, #form .container .form form .blogAuthor textarea {
+  padding: 2px 6px;
+  outline: none;
+  font-family: monospace;
+  font-style: italic;
+}
+#form .container .form form .blogTitle option, #form .container .form form .blogBody option, #form .container .form form .blogAuthor option {
+  padding: 2px 6px;
+}
+#form .container .form form button {
+  height: 30px;
+  width: 70px;
+  border: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  margin-top: 30px;
+}
+#form .container .form form .add-Blog {
+  font-family: monospace;
+  font-style: italic;
+  background-color: brown;
+  color: white;
+}
+#form .container .form form .add-Blog:hover {
+  background-color: rgba(245, 154, 154, 0.47);
+  color: brown;
+  border: 1px solid brown;
+}
+
+#details .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+#details .container .detailshead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: brown;
+  padding-bottom: 30px;
+  font-family: monospace;
+  font-style: italic;
+}
+#details .container .details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

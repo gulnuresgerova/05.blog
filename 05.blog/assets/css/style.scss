@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// hedaer section
+
+header {
+  background-color: white;
+  margin-bottom: 40px;
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+  .header {
+    font-family: monospace;
+    font-style: italic;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid brown;
+
+    h2 {
+      color: brown;
+      font-size: 1.6rem;
+      
+      @media screen and (max-width: 767px) {
+        font-size: 1.3rem;
+      }
+    }
+    input {
+      font-family: monospace;
+      font-style: italic;
+      height: 30px;
+      width: 200px;
+      padding: 0 10px;
+      outline: none;
+      color: brown;
+      border: 1px solid brown;
+      
+      @media screen and (max-width: 767px) {
+        width: 100px;
+      }
+      &::placeholder {
+        color: brown;
+      }
+    }
+    button {
+      height: 30px;
+      width: 110px;
+      border: none;
+      
+      @media screen and (max-width: 767px) {
+       width: 80px;
+      }
+    }
+
+    .sort {
+      font-family: monospace;
+      font-style: italic;
+      background-color: brown;
+      color: white;
+      &:hover {
+        background-color: rgba(245, 154, 154, 0.47);
+        color: brown;
+        border: 1px solid brown;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: start;
+      justify-content: flex-start;
+      margin-left: 0;
+
+      ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+
+        li {
+          a {
+            font-family: monospace;
+            font-style: italic;
+            text-decoration: none;
+            color: brown;
+            font-size: 1.2rem;
+            
+      @media screen and (max-width: 767px) {
+       font-size: 1rem;
+      }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// cards section
+
+#cards {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 5%;
+    margin: 0 auto;
+    .cadrshead{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        color: brown;
+        padding-bottom: 30px;
+        font-family: monospace;
+font-style: italic;
+    }
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      .card {
+        font-family: monospace;
+        font-style: italic;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 30px;
+        border: 1px solid brown;
+        box-shadow: 7px 7px 10px rgb(174, 114, 114);
+        border-radius: 7px;
+        
+      @media screen and (max-width: 767px) {
+       width: 100%;
+      }
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          row-gap: 13px;
+          h2{
+            color: rgb(68, 67, 67);
+          }
+          .text{
+            color: brown;
+            font-weight: 30px;
+          }
+          p{
+            color: grey;
+          }
+
+          button {
+            height: 30px;
+            width: 70px;
+            border: none;
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+}
+      
+          .delete {
+            font-family: monospace;
+            font-style: italic;
+            background-color: brown;
+            color: white;
+            &:hover {
+              background-color: rgba(245, 154, 154, 0.47);
+              color: brown;
+              border: 1px solid brown;
+            }
+          }
+          .edit{
+            border: none;
+            border-radius: 7px;
+            padding: 7px 10px;
+            font-family: monospace;
+            font-style: italic;
+            background-color: rgb(157, 165, 42);
+            color: white;
+            &:hover {
+                background-color: green;
+                color:white;
+               
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// form section
+
+#form{
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 5%;
+        margin: 0 auto;
+        .formhead{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: brown;
+            padding-bottom: 30px;
+            font-family: monospace;
+font-style: italic;
+        }
+        .form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            form{
+display: flex;
+align-items: start;
+justify-content: center;
+flex-direction: column;
+gap: 15px;
+.blogTitle , .blogBody , .blogAuthor{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    label{
+color: rgb(65, 64, 64);
+font-family: monospace;
+font-style: italic;
+font-size: 1.1rem;
+    }
+    input{
+        padding: 2px 6px ;
+        outline: none;
+        font-family: monospace;
+font-style: italic;
+    }
+    textarea{
+        padding: 2px 6px ;
+        outline: none;
+        font-family: monospace;
+font-style: italic;
+    }
+    option{
+        padding: 2px 6px ;
+    }
+}
+
+button {
+    height: 30px;
+    width: 70px;
+    border: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-top: 30px;
+}
+
+  .add-Blog {
+    font-family: monospace;
+    font-style: italic;
+    background-color: brown;
+    color: white;
+    &:hover {
+      background-color: rgba(245, 154, 154, 0.47);
+      color: brown;
+      border: 1px solid brown;
+    }
+  }
+            }
+        }
+    }
+}
+
+// details section
+
+#details{
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 5%;
+        margin: 0 auto;
+        .detailshead{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: brown;
+            padding-bottom: 30px;
+            font-family: monospace;
+font-style: italic;
+        }
+           
+        
+        .details{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
+    }
+}
