@@ -309,7 +309,46 @@ font-style: italic;
             display: flex;
             align-items: center;
             justify-content: center;
-
+            .card {
+              font-family: monospace;
+              font-style: italic;
+              width: 30%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 40px 30px;
+              border: 1px solid brown;
+              box-shadow: 7px 7px 10px rgb(174, 114, 114);
+              border-radius: 7px;
+            @media screen and (max-width: 767px) {
+             width: 100%;
+            }
+              .card-body {
+                display: flex;
+                flex-direction: column;
+                row-gap: 13px;
+                h2{
+                  color: rgb(68, 67, 67);
+                  em{
+                    color: brown;
+                  }
+                }
+                .text{
+                  color: brown;
+                  font-weight: 30px;
+                  em{
+                    color: brown;
+                  }
+                }
+                p{
+                  color: grey;
+                  em{
+                    color: brown;
+                  }
+                }
+      
+              }
+                  }
             
         }
     }

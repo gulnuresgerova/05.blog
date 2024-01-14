@@ -25,7 +25,7 @@ function drawCards(data) {
           <div><a class="text">
           ${element.body}... 
         </a>
-        <a href="./details.html?id=${element.id}" class="sucsecc">Read More</a></div>
+        <a href="./details.html?id=${element.id}" >Read More</a></div>
           
           <p >${element.author}</p>
           <div class="btns">

@@ -14,6 +14,9 @@ header .container {
   padding: 0 5%;
   margin: 0 auto;
 }
+em{
+  color: brown;
+}
 header .header {
   font-family: monospace;
   font-style: italic;
@@ -139,6 +142,19 @@ header .header nav ul li a {
     width: 100%;
   }
 }
+.details .card {
+  font-family: monospace;
+  font-style: italic;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  border: 1px solid brown;
+  box-shadow: 7px 7px 10px rgb(174, 114, 114);
+  border-radius: 7px;
+}
+
 #cards .container .cards .card .card-body {
   display: flex;
   flex-direction: column;
